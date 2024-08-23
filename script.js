@@ -18,7 +18,7 @@ function clearAll(){
 function calculate(){
     try {
         let result = eval(calculation);
-        document.querySelector('.final').innerHTML = `=  ${result}`;
+        document.querySelector('.final').innerHTML = `=${result}`;
     } catch (error) {
         document.querySelector('.final').innerHTML = 'Error';
     }
