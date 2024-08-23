@@ -18,19 +18,21 @@
 </head>
 
 <body>
+    
     <div class="main-container">
-        <h2 class="heading">Online Calculator  <i class="fa-solid fa-calculator"></i></h2>
+        
         <div class="calculator">
+            <h2 class="heading">Calculator  <i class="fa-solid fa-calculator"></i></h2>
             <div class="output">
-                <p class="initial"></p>
+                <p class="initial" style="color: black;"></p>
                 <p class="final"></p>
             </div>
                 
             <div class="input">
                 <button class="AC" onclick="clearAll()">AC</button>
-                <button class="delete" onclick="clearLastChar()"><i class="fa-regular fa-circle-xmark"></i></button>
-                <button onclick="display('/')">/</button>
-                <button onclick="display('*')">*</button><br>
+                <button class="delete" onclick="clearLastChar()">DEL</button>
+                <button onclick="display('()')">()</button>
+                <button onclick="display('+')">+</button><br>
                 <button onclick="display('7')">7</button>
                 <button onclick="display('8')">8</button>
                 <button onclick="display('9')">9</button>
@@ -38,10 +40,11 @@
                 <button onclick="display('4')">4</button>
                 <button onclick="display('5')">5</button>
                 <button onclick="display('6')">6</button>
-                <button onclick="display('+')">+</button><br>
+                <button onclick="display('*')">*</button><br>
                 <button onclick="display('1')">1</button>
                 <button onclick="display('2')">2</button>
-                <button onclick="display('3')">3</button><br>
+                <button onclick="display('3')">3</button>
+                <button onclick="display('/')">/</button><br>
                 <button onclick="display('%')">%</button>
                 <button onclick="display('0')">0</button>
                 <button onclick="display('.')">.</button>
