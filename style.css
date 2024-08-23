@@ -2,92 +2,107 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 body{
-    background: linear-gradient(200deg ,purple, white);
+    height: 100vh;
+    width: 100%;
+    background: black;
 }
 
-.calculator{
-    position: relative;
-    background-color: white;
-    height: 500px;
-    width: 300px;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-}
-
-.heading{
-    margin-top: 60px;
+h2{
     text-align: center;
-    font-size: 2.5em;
-    color: rgba(0, 0, 0, 0.8);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.input{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 4px;
-    padding-right: 4px;
-    padding-left: 3px;
-    background-color: purple;
-}
-
-.output{
-    text-align: right;
-    row-gap: 20px;
-    font-size: 2em;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: purple;
-    position: absolute;
-    bottom: 310px;
-    right: 10px;
+    color: black;
+    margin: 10px auto;
+    padding-top: 10px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 640px;
+    width: 330px;
+    margin:20px auto;
+    padding: 4px;
+    border: 4px solid black;
+    border-radius: 30px;
 }
 
 button{
-    width: 70px;
-    height: 60px;
-    font-size: 1em;
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    outline: none;
-    border: none;
+    height: 65px;
+    width: 65px;
+    border: 4px solid red;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    gap: 10px;
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease;
 }
 
 button:hover{
-    background-color: rgb(176, 9, 176);
+    background-color: white;
+    color: black;
+    border: 4px solid black;
+    transform: translateY(-4px)
+}
+
+button:active{
+    transform: translateY(2px)
+}
+
+.output{
+    height: 200px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: end;
+    overflow-wrap: break-word;  
+    overflow-y: auto;
+    width: 310px;
+    padding: 4px;
+
+}
+
+.initial{
+    font-size: 2.6em;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: white;
+}
+
+.final{
+    font-size: 3.2em;
+    margin-bottom: 6px;
+    font-weight: 600;
 }
 
 .equalsTo{
-    background-color: rgb(75, 2, 75);
-    
+    background-color: rgb(74, 246, 74);
+    color: black;
+    border: 4px solid black;
 }
 
 .AC{
-    color: red;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.AC:hover{
-    color: red;
+    background-color: red;
+    color: black;
+    border: 4px solid black;
 }
 
 .delete{
+    background-color: rgb(224, 97, 97);
     color: black;
-}
-
-button i{
-    font-size: 1.2em;
+    border: 4px solid black;
 }
