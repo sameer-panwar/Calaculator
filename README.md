@@ -8,5 +8,6 @@ A simple and intuitive calculator application that performs basic arithmetic ope
 - Error handling for invalid inputs
 
 
+
 ## Live Preview
 https://sameer-panwar.github.io/Calaculator/
